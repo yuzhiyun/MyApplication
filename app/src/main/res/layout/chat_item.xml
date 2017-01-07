@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chat_item_img"
+        android:paddingTop="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat1"/>
+    <TableLayout
+        android:paddingLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+        <TableRow >
+            <TextView
+                android:id="@+id/chat_item_title"
+                android:text="@string/title"
+                android:textSize="20sp"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow android:paddingTop="5dp">
+            <TextView
+                android:text="@string/w1"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"
+                />
+            <TextView
+                android:id="@+id/chat_item_time"
+                android:text="@string/chatTime"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"/>
+        </TableRow>
+        <TableRow android:paddingTop="1dp">
+            <TextView
+                android:text="@string/w2"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"
+                />
+            <TextView
+                android:id="@+id/chat_item_area"
+                android:text="@string/chatArea"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"/>
+        </TableRow>
+        <TableRow android:paddingTop="1dp">
+            <TextView
+                android:text="@string/w3"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"
+                />
+            <TextView
+                android:id="@+id/chat_item_src"
+                android:text="@string/source"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_span="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

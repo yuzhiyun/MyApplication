@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/braodcast_item_img"
+        android:paddingTop="5dp"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:scaleType="centerInside"
+        android:src="@drawable/notice"/>
+    <TextView
+        android:id="@+id/braodcast_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:layout_toRightOf="@id/braodcast_item_img"
+        android:textSize="10pt"/>
+    <TextView
+        android:id="@+id/braodcast_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:textSize="8pt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:textColor="@color/light_grey_color"/>
+</RelativeLayout>

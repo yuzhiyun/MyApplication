@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/linkman_item_img"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat1"/>
+    <TableLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+        <TableRow >
+            <TextView
+                android:id="@+id/linkman_item_name"
+                android:text="@string/linkman_name"
+                android:textSize="20sp"
+                android:layout_span="1"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:id="@+id/linkman_item_discrp"
+                android:text="@string/linkman_discrp"
+                android:textSize="15sp"
+                android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

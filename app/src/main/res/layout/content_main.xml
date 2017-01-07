@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:id="@+id/bottom">
+    <LinearLayout
+        android:id="@+id/door"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <ImageButton
+            android:scaleType="centerInside"
+            android:id="@+id/door_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:src="@drawable/door" />
+
+        <TextView
+            android:id="@+id/door_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/door"
+            android:textColor="@color/light_grey_color" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chat"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/chat_img"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:src="@drawable/chat" />
+
+        <TextView
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/chat"
+            android:textColor="@color/light_grey_color" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/school"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/school_img"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:src="@drawable/school" />
+
+        <TextView
+            android:id="@+id/school_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/school"
+            android:textColor="@color/light_grey_color" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/learn"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/learn_img"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:src="@drawable/learn" />
+
+        <TextView
+            android:id="@+id/learn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/learn"
+            android:textColor="@color/light_grey_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/mine_img"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:src="@drawable/mine" />
+
+        <TextView
+            android:id="@+id/mine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/mine"
+            android:textColor="@color/light_grey_color" />
+    </LinearLayout>
+
+</LinearLayout>
