@@ -24,20 +24,22 @@
                 android:textSize="20sp"
                 android:layout_span="2"/>
         </TableRow>
-        <TableRow android:paddingTop="5dp">
+
+        <TableRow android:paddingTop="1dp">
             <TextView
-                android:text="@string/w1"
+                android:text="@string/w3"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_span="1"
                 />
             <TextView
-                android:id="@+id/chat_item_time"
-                android:text="@string/chatTime"
+                android:id="@+id/chat_item_src"
+                android:text="@string/source"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_span="1"/>
         </TableRow>
+
         <TableRow android:paddingTop="1dp">
             <TextView
                 android:text="@string/w2"
@@ -52,16 +54,16 @@
                 android:layout_width="wrap_content"
                 android:layout_span="1"/>
         </TableRow>
-        <TableRow android:paddingTop="1dp">
+        <TableRow android:paddingTop="5dp">
             <TextView
-                android:text="@string/w3"
+                android:text="@string/w1"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_span="1"
                 />
             <TextView
-                android:id="@+id/chat_item_src"
-                android:text="@string/source"
+                android:id="@+id/chat_item_time"
+                android:text="@string/chatTime"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_span="1"/>

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/action_settings"
         android:layout_toRightOf="@id/braodcast_item_img"
+        android:textColor="@color/light_grey_color"
         android:textSize="10pt"/>
     <TextView
         android:id="@+id/braodcast_item_date"
@@ -25,5 +26,5 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="10px"
         android:layout_marginTop="5px"
-        android:textColor="@color/light_grey_color"/>
+        />
 </RelativeLayout>

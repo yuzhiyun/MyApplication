@@ -2,6 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/content_item_img"
+        android:paddingTop="2dp"
+        android:paddingLeft="15dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat1"/>
     <TableLayout
         android:paddingTop="5dp"
         android:paddingLeft="10dp"
@@ -19,25 +27,18 @@
         </TableRow>
         <TableRow android:paddingTop="10dp">
             <TextView
-                android:id="@+id/content_item_time"
-                android:text="@string/contentTime"
+                android:id="@+id/content_item_author"
+                android:text="@string/contentAuthor"
                 android:textSize="12sp"
                 android:layout_span="1"/>
             <TextView
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:id="@+id/content_item_author"
-                android:text="@string/contentAuthor"
+                android:id="@+id/content_item_time"
+                android:text="@string/contentTime"
                 android:textSize="12sp"
                 android:layout_span="1"/>
         </TableRow>
     </TableLayout>
-    <ImageView
-        android:id="@+id/content_item_img"
-        android:paddingTop="2dp"
-        android:paddingRight="15dp"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/chat1"/>
+
 </LinearLayout>

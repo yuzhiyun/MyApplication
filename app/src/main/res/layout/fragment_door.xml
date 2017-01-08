@@ -15,9 +15,9 @@
         <LinearLayout
             android:layout_alignParentTop="true"
             android:layout_width="fill_parent"
-            android:layout_height="0.7dp"
-            android:background="@color/light_grey_color"
-            android:layout_marginBottom="2px"
+            android:layout_height="1dp"
+            android:background="@color/lightest_grey_color"
+            android:layout_marginBottom="10px"
             ></LinearLayout>
         <ImageView
             android:id="@+id/b1"
@@ -50,8 +50,10 @@
             android:src="@drawable/many"
             android:layout_below="@id/f1"
             android:layout_alignParentRight="true"
+            android:clickable="true"
             />
         <TextView
+            android:id="@+id/text_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="更多"
@@ -59,6 +61,7 @@
             android:layout_below="@id/f1"
             android:layout_marginLeft="10dp"
             android:layout_toLeftOf="@id/more"
+            android:clickable="true"
             />
     </RelativeLayout>
 </LinearLayout>

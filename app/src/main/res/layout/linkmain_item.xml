@@ -23,14 +23,16 @@
                 android:id="@+id/linkman_item_name"
                 android:text="@string/linkman_name"
                 android:textSize="20sp"
-                android:layout_span="1"/>
+                android:layout_span="1"
+                android:textColor="@color/black"/>
         </TableRow>
         <TableRow >
             <TextView
                 android:id="@+id/linkman_item_discrp"
                 android:text="@string/linkman_discrp"
                 android:textSize="15sp"
-                android:layout_span="2"/>
+                android:layout_span="2"
+                android:textColor="@color/light_grey_color"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

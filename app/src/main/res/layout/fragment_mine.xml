@@ -43,7 +43,7 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="20dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/lightest_grey_color"
         android:layout_marginBottom="2px"
         ></LinearLayout>
     <ImageView
@@ -148,7 +148,7 @@
         android:layout_width="fill_parent"
         android:layout_height="20dp"
         android:layout_below="@id/mine_info"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/lightest_grey_color"
         android:layout_marginBottom="2px"
         ></LinearLayout>
     <LinearLayout

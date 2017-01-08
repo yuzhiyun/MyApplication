@@ -4,20 +4,15 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.sunmeng.myapplication.application.App;
 import com.sunmeng.myapplication.fragment.*;
 
-import io.rong.imkit.RongIM;
-import io.rong.imlib.RongIMClient;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 
@@ -45,7 +40,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     private Fragment schoolF;
     private Fragment mineF;
 
-
     //设定初始布局
     @Override
     protected void setLayoutView() {
@@ -62,27 +56,28 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 //        setSupportActionBar(toolbar);
     }
 
-    //关于标题栏中的菜单组件，暂时不用管，忽略
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    //关于标题栏中的菜单组件，暂时不用管，忽略
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    //关于标题栏中的菜单组件，暂时不用管，忽略
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    //关于标题栏中的菜单组件，暂时不用管，忽略
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     //将类中声明的各个资源变量进行资源的绑定
     @Override
@@ -116,6 +111,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         imgSchool = (ImageButton) findViewById(R.id.school_img);
         imgStudy = (ImageButton) findViewById(R.id.learn_img);
         imgMine = (ImageButton) findViewById(R.id.mine_img);
+
     }
 
 
@@ -134,7 +130,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void initOther() {
 
         setSelect(0);
-        toolbar.setVisibility(View.GONE);
+//        toolbar.setVisibility(View.GONE);
 //        tvTitle.setText("校内咨询");
 //        tvDoor.setTextColor(getResources().getColor(R.color.main_color));
     }
