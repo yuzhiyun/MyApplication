@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="10pt"
             />
     </android.support.v7.widget.Toolbar>
 

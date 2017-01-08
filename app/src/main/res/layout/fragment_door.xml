@@ -12,6 +12,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/light_grey_color"
+            android:layout_marginBottom="2px"
+            ></LinearLayout>
         <ImageView
             android:id="@+id/b1"
             android:layout_width="wrap_content"
@@ -23,28 +30,35 @@
             android:text="通知"
             android:layout_gravity="bottom"
             android:layout_toRightOf="@id/b1"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="10px"
             android:id="@+id/textView" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b1"
+            android:id="@+id/f1">
+            <ListView
+                android:id="@+id/broadcast"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/many"
+            android:layout_below="@id/f1"
+            android:layout_alignParentRight="true"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="更多"
             android:layout_gravity="bottom"
+            android:layout_below="@id/f1"
             android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/more"
             />
     </RelativeLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="180dp">
-        <ListView
-            android:id="@+id/broadcast"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0.7dp"
-        android:background="@color/light_grey_color"
-        ></LinearLayout>
-
 </LinearLayout>

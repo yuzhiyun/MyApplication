@@ -134,8 +134,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void initOther() {
 
         setSelect(0);
-        tvTitle.setText("校内咨询");
-        tvDoor.setTextColor(getResources().getColor(R.color.main_color));
+        toolbar.setVisibility(View.GONE);
+//        tvTitle.setText("校内咨询");
+//        tvDoor.setTextColor(getResources().getColor(R.color.main_color));
     }
 
     //设定activity中所有的view的点击事件
@@ -144,30 +145,31 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         resetImgsAndText();
         switch (view.getId()) {
             case R.id.door:
-                tvTitle.setText("校内咨询");
-                toolbar.setVisibility(View.VISIBLE);
+//                tvTitle.setText("校内咨询");
+                toolbar.setVisibility(View.GONE);
                 tvDoor.setTextColor(getResources().getColor(R.color.main_color));
                 setSelect(0);
                 break;
             case R.id.chat:
-                tvTitle.setText("岳麓沙龙");
+                tvTitle.setText("教育专区");
                 toolbar.setVisibility(View.VISIBLE);
                 tvChat.setTextColor(getResources().getColor(R.color.main_color));
                 setSelect(1);
                 break;
             case R.id.school:
-                toolbar.setVisibility(View.GONE);
+                tvTitle.setText("家校通");
+                toolbar.setVisibility(View.VISIBLE);
                 tvSchool.setTextColor(getResources().getColor(R.color.main_color));
                 setSelect(2);
                 break;
             case R.id.learn:
-                toolbar.setVisibility(View.GONE);
+                tvTitle.setText("心理专区");
+                toolbar.setVisibility(View.VISIBLE);
                 tvStudy.setTextColor(getResources().getColor(R.color.main_color));
                 setSelect(3);
                 break;
             case R.id.mine:
-                tvTitle.setText("个人中心");
-                toolbar.setVisibility(View.VISIBLE);
+                toolbar.setVisibility(View.GONE);
                 tvMine.setTextColor(getResources().getColor(R.color.main_color));
                 setSelect(4);
                 break;
@@ -216,7 +218,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 } else {
                     transaction.show(schoolF);
                 }
-                imgSchool.setImageResource(R.drawable.school_press);
+                imgSchool.setImageResource(R.drawable.study_press);
                 break;
             case 3:
                 if (studyF == null) {
@@ -225,7 +227,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 } else {
                     transaction.show(studyF);
                 }
-                imgStudy.setImageResource(R.drawable.learn_press);
+                imgStudy.setImageResource(R.drawable.coffee_press);
 
                 break;
             case 4:
@@ -270,9 +272,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     //将底部栏所有的图片和文字都设置为未激活状态
     private void resetImgsAndText() {
         imgDoor.setImageResource(R.drawable.door);
-        imgSchool.setImageResource(R.drawable.school);
+        imgSchool.setImageResource(R.drawable.study);
         imgChat.setImageResource(R.drawable.chat);
-        imgStudy.setImageResource(R.drawable.learn);
+        imgStudy.setImageResource(R.drawable.coffee);
         imgMine.setImageResource(R.drawable.mine);
         tvChat.setTextColor(getResources().getColor(R.color.light_grey_color));
         tvDoor.setTextColor(getResources().getColor(R.color.light_grey_color));

@@ -68,7 +68,7 @@
             android:layout_height="30dp"
             android:background="#FFFFFF"
             android:clickable="false"
-            android:src="@drawable/school" />
+            android:src="@drawable/study" />
 
         <TextView
             android:id="@+id/school_text"
@@ -94,7 +94,7 @@
             android:layout_height="30dp"
             android:background="#FFFFFF"
             android:clickable="false"
-            android:src="@drawable/learn" />
+            android:src="@drawable/coffee" />
 
         <TextView
             android:id="@+id/learn_text"

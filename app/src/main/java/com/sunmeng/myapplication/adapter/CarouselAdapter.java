@@ -53,7 +53,8 @@ public class CarouselAdapter extends PagerAdapter{
 
     @Override
     public int getCount() {
-        return diagrams.size();
+//        return diagrams.size();
+        return 3;
     }
 
     @Override

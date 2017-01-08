@@ -10,7 +10,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mine"
+            android:src="@drawable/check_grade"
             android:id="@+id/main_list_btn1"/>
 
         <TextView
@@ -29,7 +29,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mine"
+            android:src="@drawable/emotion_activity"
             android:id="@+id/main_list_btn2"/>
 
         <TextView
@@ -48,7 +48,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mine"
+            android:src="@drawable/emotion_test"
             android:id="@+id/main_list_btn3"
             />
 
@@ -68,7 +68,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mine"
+            android:src="@drawable/check_grade"
             android:id="@+id/main_list_btn4"/>
 
         <TextView
@@ -87,7 +87,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mine"
+            android:src="@drawable/emotion_test"
             android:id="@+id/main_list_btn5"/>
 
         <TextView

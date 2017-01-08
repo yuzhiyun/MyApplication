@@ -14,10 +14,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.sunmeng.myapplication.MainActivity;
 import com.sunmeng.myapplication.R;
+import com.sunmeng.myapplication.adapter.Broadcast;
+import com.sunmeng.myapplication.adapter.BroadcastAdapter;
 import com.sunmeng.myapplication.adapter.Carousel;
 import com.sunmeng.myapplication.adapter.CarouselAdapter;
 
@@ -53,6 +56,9 @@ public class doorFragment extends Fragment {
     private ImageView[] mBottomImages;//底部只是当前页面的小圆点
 
     private Timer timer = new Timer(); //为了方便取消定时轮播，将 Timer 设为全局
+
+    private List<Broadcast> brodcastItems = new ArrayList<Broadcast>();
+    private ListView listView;
 
     //定时轮播图片，需要在主线程里面修改 UI
     private Handler mHandler = new Handler() {
@@ -95,6 +101,7 @@ public class doorFragment extends Fragment {
         vpHottest = (ViewPager) view.findViewById(R.id.vp_hottest);
         llHottestIndicator = (LinearLayout) view.findViewById(R.id.ll_hottest_indicator);
         Fresco.initialize(mAct);
+        showBroadcastList();
         return view;
     }
 
@@ -121,7 +128,7 @@ public class doorFragment extends Fragment {
 
         for (int i = 0; i < mBottomImages.length; i++) {
             ImageView imageView = new ImageView(mAct);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(10, 10);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(50, 50);
             params.setMargins(5, 0, 5, 0);
             imageView.setLayoutParams(params);
             if (i == 0) {
@@ -173,6 +180,7 @@ public class doorFragment extends Fragment {
                 message.what = UPTATE_VIEWPAGER;
                 if (autoCurrIndex == headerArticles.size() - 1) {
                     autoCurrIndex = -1;
+//                    autoCurrIndex = 0 ;
                 }
                 message.arg1 = autoCurrIndex + 1;
                 mHandler.sendMessage(message);
@@ -180,19 +188,34 @@ public class doorFragment extends Fragment {
         }, 5000, 5000);
     }
 
+    public void showBroadcastList(){
+        initBroadcastList();
+        MainActivity activity = (MainActivity) getActivity();
+        //activity.getApplicationContext()才可以，但是activity.context是空值
+        BroadcastAdapter adapter = new BroadcastAdapter(activity.getApplicationContext().getApplicationContext() ,R.layout.broadcast_item ,brodcastItems );
+        listView = (ListView)view.findViewById(R.id.broadcast);
+        listView.setAdapter(adapter);
+    }
+
+    public void initBroadcastList(){
+        Broadcast item1 = new Broadcast("明天运动会", "2016-12-12");
+        brodcastItems.add(item1);
+        brodcastItems.add(item1);
+        brodcastItems.add(item1);
+    }
 
     class ImageTask extends AsyncTask<String, Void, List<Carousel>> {
         @Override
         protected List<Carousel> doInBackground(String... params) {
             List<Carousel> articles = new ArrayList<Carousel>();
             articles.add(
-                    new Carousel(1123, "http://***20151231105648_11790.jpg","www.baidu.com"));
+                    new Carousel(1123, "http://pic.pp3.cn/uploads//201510/2015101803.jpg","https://www.baidu.com/"));
             articles.add(
-                    new Carousel(1123, "http://***20151230152544_36663.jpg","www.baidu.com"));
+                    new Carousel(1123, "http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/01/48/4fb5342c58c88aac8e400ac0279cc29e.jpg","https://www.baidu.com/"));
             articles.add(
-                    new Carousel(1123, "http://***20151229204329_75030.jpg","www.baidu.com"));
-            articles.add(
-                    new Carousel(1123, "http://***20151221151031_36136.jpg","www.baidu.com"));
+                    new Carousel(1123, "http://pic.pp3.cn/uploads//201510/2015101803.jpg","https://www.baidu.com/"));
+//            articles.add(
+//                    new Carousel(1123, "http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/01/48/4fb5342c58c88aac8e400ac0279cc29e.jpg","https://www.baidu.com/"));
             return articles;
         }
 
@@ -204,36 +227,4 @@ public class doorFragment extends Fragment {
 
         }
     }
-//    private List<Carousel> articles = new ArrayList<Carousel>();
-//    private ImageView[] mBottomImages;//底部只是当前页面的小圆点
-//    private View view ;
-//    private ViewPager pager ;
-//
-//    public doorFragment() {
-//        // Required empty public constructor
-//
-//    }
-//
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        view = inflater.inflate(R.layout.fragment_door, container, false);
-//        showArticle();
-//        return view ;
-//    }
-//
-//    public void showArticle(){
-//        initArticle();
-//        MainActivity activity = (MainActivity) getActivity();
-//        //activity.getApplicationContext()才可以，但是activity.context是空值
-//        CarouselAdapter adapter = new CarouselAdapter(activity, articles);
-//        pager = (ViewPager)view.findViewById(R.id.vp_hottest);
-//        pager.setAdapter(adapter);
-//    }
-//
-//    public void initArticle(){
-//
-//    }
 }
