@@ -115,6 +115,7 @@ public class schoolFragment extends Fragment {
                         } else if (currentItem == 1) {
                             animation = new TranslateAnimation(offSet * 2 + bmWidth, 4 * offSet + 2 * bmWidth, 0, 0);
                         }
+                        break;
                 }
                 currentItem = arg0;
                 animation.setDuration(150); // 光标滑动速度

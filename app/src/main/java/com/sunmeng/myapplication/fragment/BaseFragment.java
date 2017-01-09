@@ -46,6 +46,8 @@ public abstract  class BaseFragment extends Fragment {
 
         findView(view);
 
+        setAdapter();
+
         initView();
         return view;
     }
@@ -61,4 +63,6 @@ public abstract  class BaseFragment extends Fragment {
     protected abstract void initOther();
     //初始化一些界面
     protected abstract void initView();
+    //用来设置适配器
+    protected abstract void setAdapter();
 }

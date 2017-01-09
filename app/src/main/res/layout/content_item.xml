@@ -23,21 +23,24 @@
                 android:id="@+id/content_item_title"
                 android:text="@string/contentTitle"
                 android:textSize="18sp"
-                android:layout_span="2"/>
+                android:layout_span="2"
+                android:textColor="@color/black"/>
         </TableRow>
         <TableRow android:paddingTop="10dp">
             <TextView
                 android:id="@+id/content_item_author"
                 android:text="@string/contentAuthor"
                 android:textSize="12sp"
-                android:layout_span="1"/>
+                android:layout_span="1"
+                android:textColor="@color/black"/>
             <TextView
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:id="@+id/content_item_time"
                 android:text="@string/contentTime"
                 android:textSize="12sp"
-                android:layout_span="1"/>
+                android:layout_span="1"
+                android:textColor="@color/black"/>
         </TableRow>
     </TableLayout>
 

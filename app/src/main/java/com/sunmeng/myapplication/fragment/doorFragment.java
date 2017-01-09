@@ -150,6 +150,11 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
         showBroadcastList();
     }
 
+    @Override
+    protected void setAdapter() {
+
+    }
+
     public void showBroadcastList(){
         initBroadcastList();
         MainActivity activity = (MainActivity) getActivity();

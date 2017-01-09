@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sunmeng.myapplication.Login">
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:visibility="gone"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/welcome_logo" />
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_below="@id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="10pt"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_username"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="请填写电话号码"
+            android:textColorHint="@color/light_grey_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码"
+            android:textSize="10pt"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="请输入密码"
+            android:textColorHint="@color/light_grey_color"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@id/l2"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:text="登         陆"
+        android:background="@color/main_color"/>
+    <TextView
+        android:id="@+id/be_action"
+        android:layout_below="@id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:textSize="8pt"
+        android:clickable="true"
+        android:text="激活"/>
+    <TextView
+        android:id="@+id/forget_pwd"
+        android:layout_below="@id/login"
+        android:layout_toRightOf="@id/be_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="380px"
+        android:layout_marginTop="20px"
+        android:textSize="8pt"
+        android:clickable="true"
+        android:text="忘记密码"/>
+</RelativeLayout>

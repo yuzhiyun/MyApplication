@@ -7,6 +7,11 @@
     <uses-permission android:name="ANDROID.PERMISSION.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="ANDROID.PERMISSION.WRITE_APN_SETTINGS" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:name=".application.App"
         android:allowBackup="true"
@@ -18,11 +23,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ConversationListActivity">
             android:screenOrientation="portrait"
@@ -38,6 +39,7 @@
                     android:scheme="rong" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ConversationActivity">
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -53,10 +55,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".AllBroadcast" />
-        <activity
-            android:name=".Welcome"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AllSchool"></activity>
+        <activity android:name=".Welcome">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <!--android:theme="@style/AppTheme.NoActionBar"-->
+        <activity android:name=".AllSchool" />
+        <activity android:name=".Login"/>
     </application>
 
 </manifest>
