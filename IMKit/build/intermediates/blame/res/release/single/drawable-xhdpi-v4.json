@@ -288,12 +288,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\u1f600.png"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ad_list_file_icon.png",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ad_list_file_icon.png"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_add_people.png",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_add_people.png"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ad_list_file_icon.png",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ad_list_file_icon.png"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\u1f556.png",
@@ -1136,12 +1136,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_def_rich_content.png"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ic_phone_pressed.png",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_phone_pressed.png"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ic_volume_4.png",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_volume_4.png"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ic_phone_pressed.png",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_phone_pressed.png"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\u2600.png",

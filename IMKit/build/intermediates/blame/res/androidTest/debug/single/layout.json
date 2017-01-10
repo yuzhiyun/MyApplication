@@ -44,12 +44,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_picsel_original.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_multi_rich_content_message.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_multi_rich_content_message.xml"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_cs_alert_human_evaluation.xml",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_cs_alert_human_evaluation.xml"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_multi_rich_content_message.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_multi_rich_content_message.xml"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_mention_list_item.xml",
@@ -232,12 +232,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_app_service_conversation.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_file_list_adapter.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_file_list_adapter.xml"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_dialog_popup_options_item.xml",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_dialog_popup_options_item.xml"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_file_list_adapter.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_file_list_adapter.xml"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_input_menus.xml",

@@ -1,6 +1,7 @@
 package com.sunmeng.myapplication.fragment;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -19,6 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.sunmeng.myapplication.DetailMindQuestionActivity;
 import com.sunmeng.myapplication.MainActivity;
 import com.sunmeng.myapplication.R;
 import com.sunmeng.myapplication.adapter.ChatItem;
@@ -139,6 +141,7 @@ public class studyFragment extends BaseFragment implements AdapterView.OnItemCli
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         switch (adapterView.getId()){
             case R.id.content_test :
+                startActivity(new Intent(getActivity() , DetailMindQuestionActivity.class));
                 Toast.makeText(activity,"测试",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.content_knowledge :

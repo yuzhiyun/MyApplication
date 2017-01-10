@@ -3,11 +3,14 @@ package com.sunmeng.myapplication.adapter;
 import android.app.Activity;
 import android.net.Uri;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.sunmeng.myapplication.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +18,7 @@ import java.util.List;
 /**
  * Created by yuzhiyun on 2017-01-07.
  */
-public class CarouselAdapter extends PagerAdapter{
+public class CarouselAdapter extends PagerAdapter {
 
     //日志，用于调试
     private static final String LOG = "NEWS_LOG";
@@ -23,6 +26,8 @@ public class CarouselAdapter extends PagerAdapter{
     private Activity context ;
     private List<Carousel> diagrams ;
     private List<SimpleDraweeView> images = new ArrayList<SimpleDraweeView>();
+
+//    private ViewPager viewPager ;
 
     public CarouselAdapter(Activity context, List<Carousel> diagrams){
         this.context = context;
@@ -45,6 +50,7 @@ public class CarouselAdapter extends PagerAdapter{
         container.addView(images.get(position));
         return images.get(position);
     }
+
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {

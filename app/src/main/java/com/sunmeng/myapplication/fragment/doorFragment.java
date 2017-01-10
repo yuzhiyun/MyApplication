@@ -9,12 +9,16 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.sunmeng.myapplication.AllBroadcast;
@@ -34,7 +38,7 @@ import java.util.TimerTask;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class doorFragment extends BaseFragment implements View.OnClickListener,AdapterView.OnItemClickListener{
+public class doorFragment extends BaseFragment implements View.OnClickListener,AdapterView.OnItemClickListener,View.OnTouchListener{
 
 
     private static final String ARTICLE_LATEST_PARAM = "param";
@@ -53,6 +57,14 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
     private ImageView[] mBottomImages;
     //为了方便取消定时轮播，将 Timer 设为全局
     private Timer timer = new Timer();
+    //充当标兵值，用来表示轮播图上的动作
+//    private int flage = 1;
+
+    private ImageButton btnGrade ;
+    private ImageButton btnClassGroup ;
+    private ImageButton btnSchoolHot ;
+    private ImageButton btnMindTest ;
+    private ImageButton btnPay ;
 
     private List<Broadcast> brodcastItems = new ArrayList<Broadcast>();
     private ListView listView;
@@ -71,8 +83,21 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
             case R.id.more:
                 startActivity(new Intent(getActivity() , AllBroadcast.class));
                 break;
-
-
+            case R.id.main_list_btn1:
+                Toast.makeText(activity,"成绩查询",Toast.LENGTH_SHORT).show();
+                break ;
+            case R.id.main_list_btn2:
+                Toast.makeText(activity,"班群",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.main_list_btn3:
+                Toast.makeText(activity,"学校动态",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.main_list_btn4:
+                Toast.makeText(activity,"心理测评",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.main_list_btn5:
+                Toast.makeText(activity,"支付",Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 
@@ -85,6 +110,37 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
                 startActivity(new Intent(getActivity() , AllBroadcast.class));
 
         }
+    }
+
+    //由于viewPager组件没有click点击事件处理，所以这里选用事件监听器
+    //不知道为什么没点击一次轮播图，就会触发三个动作down、up、move
+    //所以在这里就只考虑up事件
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        switch (motionEvent.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                flage = 0;
+//                break;
+//            case MotionEvent.ACTION_MOVE:
+//                flage = 1;
+//                break;
+            case MotionEvent.ACTION_UP:
+                    int item = vpHottest.getCurrentItem();
+                    switch (item){
+                        case 0 :
+                            Toast.makeText(activity,"轮播图第一页",Toast.LENGTH_SHORT).show();
+                            break;
+                        case 1 :
+                            Toast.makeText(activity,"轮播图第二页",Toast.LENGTH_SHORT).show();
+                            break;
+                        case 2 :
+                            Toast.makeText(activity,"轮播图第三页",Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+
+
+        }
+        return false;
     }
 
     //    public static doorFragment newInstance(String param) {
@@ -118,7 +174,16 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
     protected void setListener() {
         imgMore.setOnClickListener(this);
         tvMore.setOnClickListener(this);
+
         listView.setOnItemClickListener(this);
+
+        btnGrade.setOnClickListener(this);
+        btnClassGroup.setOnClickListener(this);
+        btnSchoolHot.setOnClickListener(this);
+        btnMindTest.setOnClickListener(this);
+        btnPay.setOnClickListener(this);
+
+        vpHottest.setOnTouchListener(this);
     }
 
     @Override
@@ -135,9 +200,17 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
     protected void findView(View view) {
         vpHottest = (ViewPager) view.findViewById(R.id.vp_hottest);
         llHottestIndicator = (LinearLayout) view.findViewById(R.id.ll_hottest_indicator);
+
         tvMore = (TextView) view.findViewById(R.id.text_more);
+
         imgMore = (ImageView) view.findViewById(R.id.more);
         listView = (ListView)view.findViewById(R.id.broadcast);
+
+        btnGrade = (ImageButton)view.findViewById(R.id.main_list_btn1);
+        btnClassGroup = (ImageButton)view.findViewById(R.id.main_list_btn2);
+        btnSchoolHot = (ImageButton)view.findViewById(R.id.main_list_btn3);
+        btnMindTest = (ImageButton)view.findViewById(R.id.main_list_btn4);
+        btnPay = (ImageButton)view.findViewById(R.id.main_list_btn5);
     }
 
     @Override
