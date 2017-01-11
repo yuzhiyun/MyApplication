@@ -22,7 +22,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ConversationListActivity">
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -62,7 +62,8 @@
         <!-- android:theme="@style/AppTheme.NoActionBar" -->
         <activity android:name=".AllSchool" />
         <activity android:name=".Login" />
-        <activity android:name=".DetailMindQuestionActivity"></activity>
+        <activity android:name=".DetailMindQuestionActivity" />
+        <activity android:name=".CheckGradeActivity"></activity>
     </application>
 
 </manifest>

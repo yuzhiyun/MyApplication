@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.sunmeng.myapplication.AllBroadcast;
+import com.sunmeng.myapplication.CheckGradeActivity;
 import com.sunmeng.myapplication.MainActivity;
 import com.sunmeng.myapplication.R;
 import com.sunmeng.myapplication.adapter.Broadcast;
@@ -84,7 +85,8 @@ public class doorFragment extends BaseFragment implements View.OnClickListener,A
                 startActivity(new Intent(getActivity() , AllBroadcast.class));
                 break;
             case R.id.main_list_btn1:
-                Toast.makeText(activity,"成绩查询",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(activity,"成绩查询",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity() , CheckGradeActivity.class));
                 break ;
             case R.id.main_list_btn2:
                 Toast.makeText(activity,"班群",Toast.LENGTH_SHORT).show();

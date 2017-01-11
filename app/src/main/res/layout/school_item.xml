@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="5px">
     <ImageView
         android:layout_marginLeft="20px"
+        android:layout_marginTop="5px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/schoolers"/>
@@ -13,7 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="长郡中学"
-        android:textSize="10pt"
-        android:layout_margin="12px"
+        android:textSize="7pt"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10px"
         />
 </LinearLayout>
