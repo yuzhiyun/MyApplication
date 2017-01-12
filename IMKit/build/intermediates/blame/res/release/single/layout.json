@@ -380,11 +380,11 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\layout\\rc_fr_conversation_member_list.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\layout\\rc_location_preview_activity.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\layout\\rc_location_preview_activity.xml"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\layout\\rc_dialog_popup_prompt_warning.xml",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\layout\\rc_dialog_popup_prompt_warning.xml"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\layout\\rc_location_preview_activity.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\layout\\rc_location_preview_activity.xml"
     }
 ]

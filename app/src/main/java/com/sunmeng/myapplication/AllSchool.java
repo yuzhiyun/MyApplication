@@ -9,12 +9,15 @@ import com.sunmeng.myapplication.adapter.School;
 import com.sunmeng.myapplication.adapter.SchoolAdapter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class AllSchool extends NewBaseActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView ;
     private List<School> schoolItems = new ArrayList<School>();
+    List<HashMap<String,String>> mylist;
+    private Intent intent ;
 
     @Override
     protected void setLayoutView() {
@@ -33,12 +36,21 @@ public class AllSchool extends NewBaseActivity implements AdapterView.OnItemClic
 
     @Override
     protected void initOther() {
+        //用来接收上一个界面传来的数据
+        intent=getIntent();
+//        mylist = (List<HashMap<String, String>>)intent.getSerializableExtra("schoolLists");
+
         showSchoolList();
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        startActivity(new Intent(AllSchool.this , Login.class));
+        if(intent.hasExtra("type")){
+            startActivity(new Intent(AllSchool.this , Login.class));
+        }else{
+            startActivity(new Intent(AllSchool.this , Register.class));
+        }
+
     }
 
     public void showSchoolList(){
@@ -50,6 +62,11 @@ public class AllSchool extends NewBaseActivity implements AdapterView.OnItemClic
     }
 
     public void initSchoolList(){
+//        School item1 ;
+//        for (HashMap<String,String> l : mylist) {
+//            item1 = new School(l.get("name"));
+//            schoolItems.add(item1);
+//        }
         School item1 = new School( "中南大学铁道学院");
         schoolItems.add(item1);
         schoolItems.add(item1);

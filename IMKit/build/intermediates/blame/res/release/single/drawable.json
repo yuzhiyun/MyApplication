@@ -12,12 +12,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_selector_grid_camera_mask.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_emoji_grid_item_selector.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_emoji_grid_item_selector.xml"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_pb_file_download_progress.xml",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_pb_file_download_progress.xml"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_emoji_grid_item_selector.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_emoji_grid_item_selector.xml"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_ic_phone_selector.xml",
@@ -160,16 +160,16 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_switch_btn.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_progress_sending_style.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_progress_sending_style.xml"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_bg_sidebar.xml",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_bg_sidebar.xml"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_progress_sending_style.xml",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_progress_sending_style.xml"
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\src\\main\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable\\rc_send_toggle_selector.xml",

@@ -49,6 +49,6 @@
         android:layout_below="@id/welcome"
         android:layout_toRightOf="@id/login1"
         android:id="@+id/register1"
-        android:text="注册"/>
+        android:text="激活"/>
 
 </RelativeLayout>

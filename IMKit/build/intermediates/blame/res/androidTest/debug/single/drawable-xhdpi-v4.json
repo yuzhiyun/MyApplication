@@ -440,12 +440,12 @@
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f389.png"
     },
     {
-        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u26a1.png",
-        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u26a1.png"
-    },
-    {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_files_normal.png",
         "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_files_normal.png"
+    },
+    {
+        "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u26a1.png",
+        "source": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u26a1.png"
     },
     {
         "merged": "E:\\Android\\workSpace\\MyApplication4\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_real_time_location_exit.png",

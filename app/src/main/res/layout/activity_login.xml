@@ -80,25 +80,16 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50px"
         android:layout_marginTop="50px"
+        android:textSize="8pt"
         android:text="登         陆"
         android:background="@color/main_color"/>
     <TextView
-        android:id="@+id/be_action"
-        android:layout_below="@id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginTop="20px"
-        android:textSize="8pt"
-        android:clickable="true"
-        android:text="激活"/>
-    <TextView
         android:id="@+id/forget_pwd"
         android:layout_below="@id/login"
-        android:layout_toRightOf="@id/be_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="380px"
+        android:layout_marginRight="80px"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20px"
         android:textSize="8pt"
         android:clickable="true"

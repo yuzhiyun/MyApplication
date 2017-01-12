@@ -63,7 +63,9 @@
         <activity android:name=".AllSchool" />
         <activity android:name=".Login" />
         <activity android:name=".DetailMindQuestionActivity" />
-        <activity android:name=".CheckGradeActivity"></activity>
+        <activity android:name=".CheckGradeActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".FindPWD"></activity>
     </application>
 
 </manifest>
